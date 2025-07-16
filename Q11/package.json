@@ -1,0 +1,14 @@
+{
+"name": "@ayushigondaliya/even-odd",
+  "version": "1.0.0",
+  "description": "check number is even or odd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayushi",
+  "license": "ISC",
+  "dependencies": {
+    "even-odd": "^1.0.0"
+  }
+}

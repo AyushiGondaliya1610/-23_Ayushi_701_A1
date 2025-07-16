@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    
+    <h1>Ajax call to nodejs</h1>
+    <button onclick="getHello()">Click me</button>
+    <p id="response"></p>
+
+    <script>
+        function getHello(){
+            fetch("/getHello")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("response").innerText = data;
+            })
+            .catch(error => console.error("Error:", error));
+        }
+    </script>
+
+
+
+
+</body>
+</html>
